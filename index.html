@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kele · Street Notes (Color-Safe)</title>
+
+  <!-- 这一版是“强制配色安全版”，不依赖 CSS 变量，不使用渐变，避免被系统/浏览器覆盖 -->
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf5 !important; /* 奶白背景 */
+      color: #1a1a1a !important;           /* 主文字色 */
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.9;
+      forced-color-adjust: none !important;
+    }
+
+    /* ---------------- Header ---------------- */
+
+    header {
+      padding: 100px 10vw 90px;
+      background-color: #ff4491 !important; /* 荧光粉 */
+      color: #1a1a1a !important;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin: 0 0 24px 0;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      max-width: 760px;
+      background-color: #ffffff !important;
+      padding: 24px 28px;
+      border-left: 8px solid #ffe026; /* 明黄 */
+      font-size: 1.05rem;
+    }
+
+    .sticker {
+      display: inline-block;
+      background-color: #ffe026 !important;
+      color: #000000 !important;
+      padding: 4px 10px;
+      font-weight: 700;
+      margin-right: 8px;
+      transform: rotate(-2deg);
+    }
+
+    /* ---------------- Section ---------------- */
+
+    section {
+      padding: 90px 10vw;
+      background-color: #fffaf5 !important;
+      border-bottom: 2px dashed #dddddd;
+    }
+
+    section h2 {
+      font-size: 2.6rem;
+      margin-bottom: 40px;
+      color: #ff4491 !important; /* 荧光粉标题 */
+    }
+
+    .block {
+      max-width: 900px;
+      margin-bottom: 48px;
+    }
+
+    .english {
+      margin-top: 18px;
+      font-style: italic;
+      color: #444444 !important;
+    }
+
+    /* ---------------- Interests ---------------- */
+
+    .highlight {
+      background-color: #00fff9 !important; /* 电光蓝 */
+      padding: 4px 8px;
+      font-weight: 600;
+    }
+
+    /* ---------------- Music ---------------- */
+
+    .music-list li {
+      margin-bottom: 18px;
+    }
+
+    .music-list a {
+      color: #00aaa6 !important;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    /* ---------------- CORTIS ---------------- */
+
+    .cortis {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .cortis img {
+      width: 100%;
+      border-radius: 10px;
+      border: 6px solid #ff4491 !important;
+    }
+
+    /* ---------------- Footer ---------------- */
+
+    footer {
+      padding: 70px 10vw;
+      background-color: #00fff9 !important; /* 电光蓝 */
+      color: #000000 !important;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 900px) {
+      header h1 { font-size: 2.6rem; }
+      .cortis { grid-template-columns: 1fr; }
+    }
+  </style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>KELE / STREET NOTES</h1>
+  <p>
+    <span class="sticker">unfinished</span>
+    <span class="sticker">learning</span>
+    <span class="sticker">becoming</span>
+    <br/><br/>
+    我更愿意把自己理解为一个持续生成中的人，而不是已经被定义完成的结果。这个网站不是履历，也不是结论，而是一种状态记录——关于我如何在学习、观察、表达与行动之间不断调整自己的位置。
+  </p>
+</header>
+
+<section>
+  <h2>ABOUT ME / 关于我</h2>
+  <div class="block">
+    我始终相信，真正重要的并不是起点有多高，而是在成长过程中是否持续保持学习与反思的能力。进入高中后，我逐渐学会以更主动的姿态面对挑战，在变化与压力中寻找自我定位。新的学业环境让我意识到，所谓优秀并非单一标准，而是一种不断逼近自我潜力的过程。
+    <br/><br/>
+    在学习与实践中，我逐渐培养起对经济与社会议题的兴趣，也开始有意识地将课堂知识与现实问题相结合。面对理解上的偏差与能力上的不足，我选择通过阅读、研究与实践不断修正认知，而非回避问题本身。这一过程让我学会以更理性的视角看待结果，也更清楚地理解持续投入的意义。
+    <br/><br/>
+    我希望自己能够成为一个兼具独立思考与行动能力的人：既能在复杂的信息中形成判断，也能在不确定的环境中保持耐心与韧性。未来，我期待在更加开放、多元的学习环境中深化对世界的理解，并将思考转化为对社会有价值的实践。
+    <div class="english">
+      I do not see myself as a finished answer. Learning, for me, is a continuous act of correction — an attempt to stay honest while navigating complexity, uncertainty, and growth.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>INTERESTS / 兴趣与身体</h2>
+  <div class="block">
+    <span class="highlight">视频剪辑</span> 对我而言是一种整理世界的方式。我通过节奏、画面切换与叙事结构重新安排时间，也在这个过程中理解“表达”并非装饰，而是一种选择。
+    <br/><br/>
+    <span class="highlight">电影</span> 是我认识他人视角的重要入口。同一个故事可以被无数种方式讲述，而我始终对那些留白、节制、甚至略显沉默的表达方式保持偏爱。
+    <br/><br/>
+    <span class="highlight">串珠制作</span> 是一种缓慢而安静的劳动。它让我重新适应重复、耐心与细节的价值。
+    <br/><br/>
+    <span class="highlight">Hiphop Dance</span> 则完全相反。身体在音乐中先于语言做出反应，那是一种无法伪装的真实。
+    <div class="english">
+      Editing allows me to control time. Dancing allows time to escape control.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>MUSIC ON REPEAT / 单曲循环</h2>
+  <ul class="music-list block">
+    <li><strong>Redbone</strong> – Childish Gambino</li>
+    <li><strong>Flowers On The Floor</strong> – LANY</li>
+    <li><a href="https://c6.y.qq.com/base/fcgi-bin/u?__=5zA3IFMZZGtc" target="_blank">How Much Is ****？（点击播放）</a></li>
+    <li><strong>I'm Coming Out</strong> – Diana Ross</li>
+    <li><strong>I Will Survive</strong> – Diana Ross</li>
+    <li>Frank Ocean 与 Daniel Caesar 的音乐让我意识到，情绪可以是柔软而复杂的。</li>
+  </ul>
+</section>
+
+<section>
+  <h2>CORTIS / FAVORITE MEMBER</h2>
+  <div class="cortis block">
+    <img src="/Users/linkele/Desktop/截屏2026-01-15 16.15.20.png" alt="CORTIS member" />
+    <div>
+      CORTIS 对我来说不仅是一个 K-pop 团体，更像是一种舞台表达方式的集合体。我最喜欢的这位成员以克制而精准的身体控制，呈现出一种冷静但极具张力的存在感。
+      <br/><br/>
+      他的舞蹈并不依赖夸张的动作，而是在细节中积累力量。这种风格深刻影响了我对“表现力”的理解。
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>ENDING NOTE</h2>
+  <div class="block">
+    这个网站不会是一个完成态。它会被反复修改、覆盖、重写，就像一面不断被涂改的墙。
+    <div class="english">This is not a portfolio. This is a trace.</div>
+  </div>
+</section>
+
+<footer>
+  © 2026 · Kele · Street Notes
+</footer>
+
+</body>
+</html>
